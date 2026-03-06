@@ -11,6 +11,7 @@
   /* Your Common Colors */
   --primary: #50586C;
   --secondary: #DCE2F0;
+  --accent: #f4caa0;
 }
 
 /* ✅ Tailwind Theme Inline (v4 style) */
@@ -20,6 +21,7 @@
 
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
 
   /* Fonts */
   --font-bungee: "Bungee", cursive;
@@ -107,6 +109,18 @@ body {
   .animate-float {
     animation: none !important;
   }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
 }
 
 @tailwind base;
