@@ -19,7 +19,7 @@ const [activeTab, setActiveTab] = useState("about");
     about: {
       text: "I am a passionate web developer focused on creating modern, fast and user-friendly websites. I enjoy working with new technologies and building creative digital experiences.",
       info: [
-        { label: "Name", value: "Jyoti Sathwara" },
+        { label: "Name", value: "Delloin Menthen" },
         { label: "Location", value: "India" },
         { label: "Experience", value: "2+ Years" },
         { label: "Freelance", value: "Available" }
@@ -95,7 +95,7 @@ const [activeTab, setActiveTab] = useState("about");
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: .7 }}
-              className="text-4xl font-bold leading-tight md:text-6xl"
+              className="text-4xl font-bungee font-bold leading-tight md:text-6xl"
             >
               Building the
               <span className="block bg-accent bg-clip-text text-transparent">
@@ -184,7 +184,7 @@ const [activeTab, setActiveTab] = useState("about");
           </p>
 
           <h2 className="mt-5 text-4xl font-bold md:text-5xl">
-            Mission & Vision
+            Mission & <span className="text-accent"> Vision</span>
           </h2>
 
           <p className="mt-4 text-gray-400">
@@ -213,7 +213,7 @@ const [activeTab, setActiveTab] = useState("about");
 
               <h3 className="text-2xl text-accent font-semibold">My Mission</h3>
 
-              <p className="mt-4 text-gray-800 leading-relaxed">
+              <p className="mt-4 text-secondary/60 leading-relaxed">
                 My mission is to design and develop modern websites that
                 combine creativity, performance, and user experience. I aim to
                 help businesses build strong digital identities through clean
@@ -239,7 +239,7 @@ const [activeTab, setActiveTab] = useState("about");
 
               <h3 className="text-2xl text-accent font-semibold">My Vision</h3>
 
-              <p className="mt-4 text-gray-800 leading-relaxed">
+              <p className="mt-4 text-secondary/60 leading-relaxed">
                 My vision is to become a creative developer who builds
                 innovative and futuristic web experiences. I strive to push the
                 boundaries of design and technology to create websites that are
@@ -325,7 +325,7 @@ const [activeTab, setActiveTab] = useState("about");
                         key={i}
                         className="bg-white/5 p-4 rounded-lg border border-white/10"
                       >
-                        <p className="text-gray-500 text-sm">{item.label}</p>
+                        <p className="text-secondary/60 text-sm">{item.label}</p>
                         <p className="font-semibold">{item.value}</p>
                       </div>
 

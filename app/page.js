@@ -215,7 +215,7 @@ export default function Home() {
                     Hey! I'm
                   </p>
 
-                  <h1 className="text-4xl font-extrabold leading-tight text-secondary sm:text-5xl lg:text-6xl">
+                  <h1 className="text-4xl font-bungee font-extrabold leading-tight text-secondary sm:text-5xl lg:text-6xl">
                     {slides[index].title}
                   </h1>
 
